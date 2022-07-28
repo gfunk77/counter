@@ -29,6 +29,7 @@ html {
   --spacing: 2px;
   --maxWidth: 1170px;
   --fixedWidth: 600rem;
+  --transition: 300ms linear all;
   --shadow-1: 0 10px 15px -3px rgb(0, 0, 0, 0.1),
     0 4px 6px -4px rgb(0, 0, 0, 0.1);
   --shadow-2: 0 20px 25px -5px rgb(0, 0, 0, 0.1),
@@ -109,7 +110,7 @@ Counter
 
 nav {
   height: 4rem;
-  background: var(--accentColor);
+  background: var(--btnColor);
   box-shadow: var(--shadow-2);
   display: grid;
   place-items: center;
@@ -161,4 +162,10 @@ main {
   border: transparent;
   margin-right: 1rem;
   margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+.btn:hover {
+  background: var(--backgroundColor);
+  color: var(--accentColor);
+  border: 2px solid var(--accentColor);
 }
